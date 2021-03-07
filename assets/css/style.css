@@ -1,5 +1,7 @@
 .main-box {
-    min-height: 80vh;
+    min-height: 100vh;
+    /* background-color: red; */
     text-align: center;
-    /* width: 30%; */
 }
+
+
