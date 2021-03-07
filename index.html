@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Virtual Museum</title>
 </head>
@@ -54,8 +55,8 @@
                 <span class="w-auto flex justify-end items-center text-gray-500 p-2">
                     <i class="material-icons text-3xl">Museums</i>
                 </span>
-                <input class="w-full rounded p-2 text-2xl" type="text" placeholder="Try 'Los Angeles Museum`'">
-                <button class="bg-red-400 hover:bg-red-300 rounded text-white p-2 pl-4 pr-4">
+                <input id="searchBar" class="w-full rounded p-2 text-2xl" type="text" placeholder="Try 'Los Angeles Museum`'">
+                <button id="searchButton" class="bg-red-400 hover:bg-red-300 rounded text-white p-2 pl-4 pr-4">
                          <p class="font-semibold text-xs">Search</p>
                 </button>
                 </div>
@@ -102,3 +103,4 @@
         </div>
       </footer>
       <script src="./assets/js/script.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
