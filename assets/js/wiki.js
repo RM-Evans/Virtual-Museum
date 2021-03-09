@@ -14,7 +14,7 @@ async function submitQuery(event) {
     //can choose amount of returned results with = srlimit=5
     //getting around CORS issues = origin=*
     const wikiReturn = await fetch(
-        'https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=5&srsearch='
+        'https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=3&srsearch='
         +
         inputValue
     ).then(response => response.json()) 
