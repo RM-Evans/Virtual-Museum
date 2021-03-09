@@ -1,4 +1,4 @@
-// FETCH AND DISPLAY WIKI SEARCH RESULTS
+localStorage// FETCH AND DISPLAY WIKI SEARCH RESULTS
 
 
 const formElement = document.querySelector('.searchWikipedia')
@@ -35,7 +35,7 @@ function wikiResults(results) {
 
 
     console.log(results)
-    wikiSearchResults.innerHTML = ''
+    //wikiSearchResults.innerHTML = ''
     //or removeChild
     results.query.search.forEach(result => {
 
