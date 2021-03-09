@@ -64,8 +64,11 @@
     </div>
 
     <form class="searchWikipedia mt-10">
+        <datalist id="history">
+            
+        </datalist>
         <div class=" bg-white shadow flex mx-6 rounded w-10/12">
-            <input class="searchInput w-full rounded p-2 text-2xl outline-none" type="text"
+            <input list="history" class="searchInput w-full rounded p-2 text-2xl outline-none" type="text"
                 placeholder="Try 'Los Angeles Museum`'">
             <button type="submit" class="bg-red-400 hover:bg-red-300 rounded text-white p-2 pl-4 pr-4">
                 <p class="font-semibold text-xs">Search</p>
@@ -129,5 +132,6 @@
             </div>
         </div>
     </footer>
+    <script src="./assets/js/script.js"></script>
     <script src="./assets/js/wiki.js"></script>
 </body>
