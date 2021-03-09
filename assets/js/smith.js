@@ -56,12 +56,13 @@ function smithResults(response) {
         //.map the array again to make an array of image elements
         const imageEls= imageResults.map( result => {
             if(result === undefined) return result
-
+            
             const image= document.createElement('img')
             image.setAttribute("src", result)
             //add padding to the images, and max width and height
-            image.classList.add('')
+            image.classList.add('p-8','w-full')
             return image
+            
         });
 //for-loop through imageEls array to append the results to the page
         for(let item of imageEls) {
@@ -70,7 +71,7 @@ function smithResults(response) {
                 console.log(item);
             }
         }
-    }
+}
         
 
 
