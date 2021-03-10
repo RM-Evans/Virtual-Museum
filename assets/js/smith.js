@@ -46,6 +46,7 @@ async function submitQuery(event) {
 function smithResults(response) {
 
     const smithSearchResults = document.querySelector('.searchResultsSmith')
+    //needs to clear the innerHTML here, not in wiki.js.
     smithSearchResults.innerHTML= '';
 
     const imageResults= response.rows.map(image =>
