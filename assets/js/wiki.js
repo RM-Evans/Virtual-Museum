@@ -5,7 +5,6 @@ const formElement = document.querySelector('.searchWikipedia')
 const inputElement = document.querySelector('.searchInput')
 
 async function submitQuery(event) {
-    console.log(event)
 
     event.preventDefault();
     //grab form input value
@@ -21,7 +20,6 @@ async function submitQuery(event) {
         +
         inputValue
     ).then(response => response.json()) 
-    console.log(wikiReturn)
         //CALL wikiResults 
     wikiResults(wikiReturn);
 }
@@ -36,15 +34,12 @@ function wikiResults(results) {
     //TODO: search result class -  keep this const!!!!
     const wikiSearchResults = document.querySelector('.searchResults')
 
-
-    console.log(results)
     wikiSearchResults.innerHTML = ''
     //or removeChild
     results.query.search.forEach(result => {
 
         const wikiUrl = `https://en.wikipedia.org/?curid=${result.pageid}`
 
-        console.log(results)
         
         
         wikiSearchResults.insertAdjacentHTML(

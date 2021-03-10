@@ -3,6 +3,7 @@ var pastSearches = [];
 if (localStorage["pastSearches"]) {
     pastSearches = JSON.parse(localStorage["pastSearches"]);
 }
+
 //when the array lenght reaches 5 it will drop the oldest search
 function addToHistory(search) {
     if (pastSearches.indexOf(search) == -1) {
@@ -14,6 +15,8 @@ function addToHistory(search) {
         localStorage["pastSearches"] = JSON.stringify(pastSearches);
     }
 }
+
+//
 function drawPastSearches() {
     if (pastSearches.length) {
         var recentHistory = document.querySelector("#history")
@@ -24,8 +27,6 @@ function drawPastSearches() {
             option.setAttribute("value", pastSearches[i]);
             recentHistory.appendChild(option);
         }
-        // var html = pastSearchesTemplate({search:pastSearches});
-        // $("pastSearches").html(html);
     }
 }
 drawPastSearches();
