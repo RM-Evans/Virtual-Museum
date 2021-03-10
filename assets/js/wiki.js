@@ -1,4 +1,4 @@
-localStorage// FETCH AND DISPLAY WIKI SEARCH RESULTS
+// FETCH AND DISPLAY WIKI SEARCH RESULTS
 
 
 const formElement = document.querySelector('.searchWikipedia')
