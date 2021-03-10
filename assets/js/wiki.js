@@ -35,7 +35,7 @@ function wikiResults(results) {
 
 
     console.log(results)
-    //wikiSearchResults.innerHTML = ''
+    wikiSearchResults.innerHTML = ''
     //or removeChild
     results.query.search.forEach(result => {
 
