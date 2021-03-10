@@ -10,7 +10,7 @@
     <title>Virtual Museum</title>
 </head>
 
-<body class="bg-gray-800">
+<body >
 
     <div class="w-full text-gray-700 bg-yellow-300 dark-mode:text-gray-200 dark-mode:bg-gray-800">
         <div x-data="{ open: false }"
@@ -53,10 +53,10 @@
                 </div>
         </div>
     </div>
-    <form class="searchWikipedia mt-10">
+
+    
+    <form class="searchWikipedia searchSmithsonian mt-10">
         <datalist id="history">
-            <option value="dog"></option>
-            <option value="cat"></option>
         </datalist>
         <div class=" bg-white shadow flex mx-6 rounded w-10/12">
             <input list="history" class="searchInput w-full rounded p-2 text-2xl outline-none" type="text"
@@ -74,6 +74,8 @@
             <section class="searchResults">
             </section>
         </div>
+
+        <section class="searchResultsSmith"></section>
     </section>
 
 
@@ -127,6 +129,7 @@
     </footer>
     <script src="./assets/js/history.js"></script>
     <script src="./assets/js/wiki.js"></script>
+    <script src="./assets/js/smith.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </body>
 
