@@ -1,8 +1,10 @@
 .main-box {
-    min-height: 100vh;
+    min-height: 86vh;
     /* background-color: red; */
     text-align: center;
     /* width: 30%; */
+    max-width: 80%;
+    margin: auto;
 }
 
 .searchWikipedia {

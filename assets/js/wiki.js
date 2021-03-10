@@ -11,6 +11,9 @@ async function submitQuery(event) {
     //grab form input value
     //trim whitespace from form value
     const inputValue = inputElement.value.trim()
+    //add to local storage
+    addToHistory(inputValue);
+
     //can choose amount of returned results with = srlimit=5
     //getting around CORS issues = origin=*
     const wikiReturn = await fetch(
@@ -61,4 +64,3 @@ function wikiResults(results) {
 }
 
 formElement.addEventListener('submit', submitQuery)
-
