@@ -5,7 +5,7 @@ if (localStorage["pastSearches"]) {
 }
 //when the array lenght reaches 5 it will drop the oldest search
 function addToHistory(search){
-if (pastSearches.indexof(search) == -1) {
+if (pastSearches.indexOf(search) == -1) {
     pastSearches.unshift(search);
     if(pastSearches.lenght > 5){
         pastSearches.pop();
