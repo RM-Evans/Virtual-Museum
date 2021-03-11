@@ -58,9 +58,9 @@
     <form class="searchWikipedia searchSmithsonian mt-10">
         <datalist id="history">
         </datalist>
-        <div class=" bg-white shadow flex mx-6 rounded w-10/12">
+        <div class=" bg-white shadow flex mx-6 rounded w-10/12" id="resultInputContainer">
             <input list="history" class="searchInput w-full rounded p-2 text-2xl outline-none" type="text"
-                placeholder="Try 'Los Angeles Museum`'">
+                placeholder="Try 'Albert Einstein'">
             <button type="submit" class="bg-red-400 hover:bg-red-300 rounded text-white p-2 pl-4 pr-4">
                 <p class="font-semibold text-xs">Search</p>
             </button>
@@ -127,9 +127,10 @@
             </div>
         </div>
     </footer>
-    <script src="./assets/js/history.js"></script>
     <script src="./assets/js/wiki.js"></script>
     <script src="./assets/js/smith.js"></script>
+    <script src="./assets/js/search.js"></script>
+    <script src="./assets/js/history.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </body>
 
