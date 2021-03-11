@@ -7,7 +7,7 @@ if (localStorage["pastSearches"]) {
 function addToHistory(search) {
     if (pastSearches.indexOf(search) == -1) {
         pastSearches.unshift(search);
-        if (pastSearches.lenght > 5) {
+        if (pastSearches.length > 5) {
             pastSearches.pop();
         }
         drawPastSearches();

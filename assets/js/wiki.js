@@ -63,4 +63,4 @@ function wikiResults(results) {
     });
 }
 
-formElement.addEventListener('submit', submitQuery)
+formElement?.addEventListener('submit', submitQuery)
