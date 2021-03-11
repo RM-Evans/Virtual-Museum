@@ -23,7 +23,7 @@ async function submitQuery(event) {
     //can choose amount of returned results with = srlimit=5
     //getting around CORS issues = origin=*
     const smithReturn = await fetch(
-        'https://api.si.edu/openaccess/api/v1.0/search?rows=50&q='
+        'https://api.si.edu/openaccess/api/v1.0/search?rows=75&q='
         +
         inputValue +
         '&api_key=7vBdFGKepK5x26swaVx7qzLBLuMCFGG9lPoXQokI'
@@ -32,6 +32,7 @@ async function submitQuery(event) {
     console.log(smithReturn);
         //CALL smithResults 
     smithResults(smithReturn.response);
+    
 }
 
 
