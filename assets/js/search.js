@@ -19,7 +19,7 @@ mainButton?.addEventListener('click', function(event){
     event.preventDefault()
     getFilledForm();
     console.log(mainButton)
-    window.location.replace('/results.html');
+    window.location.replace('./results.html');
     mainSetResult();
 })
 
