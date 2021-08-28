@@ -33,12 +33,13 @@ https://rm-evans.github.io/Virtual-Museum/
 
 ## Technologies
 ***
-*HTML
-*CSS
-*Tailwind CSS
-*JavaScript
-*Smithsonian open access API
-*Wikipedia API
+-JavaScript
+-Smithsonian open access API
+-Wikipedia API
+-HTML
+-CSS
+-Tailwind CSS
+
 
 
 
